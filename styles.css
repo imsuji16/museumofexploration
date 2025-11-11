@@ -1,0 +1,28 @@
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.base-text {
+    font-family: "Monospace", monospace;
+    color: white;
+    font-size: 48px;
+  
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
