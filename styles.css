@@ -34,13 +34,15 @@
     font-family: "Monospace", monospace;
     color: white;
     font-size: 16px;
-    
+    text-decoration: none;
+    transition: font-size 0.1s ease-in-out;    
 }
 
 .base-text {
-    font-family: "Monospace", monospace;
+    font-family: "Stack Sans Notch", sans-serif;
     color: white;
     font-size: 48px;
+    text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.7);
 }
 
 .body {
@@ -52,14 +54,18 @@
     align-items: center;
 }
 
+body {
+    overflow: hidden;
+}
+
 .box {
     width: 80%;
     max-width: 800px;
     background-color: #111;
     border-radius: 12px;
     padding: 20px 30px;
-    margin: 340px auto 50px auto; /* pushes it below the banner */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    margin: 340px auto 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
@@ -72,4 +78,15 @@
     font-size: 18px;
     line-height: 1.6;
     color: #ddd;
+}
+
+#banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    transition: transform 0.2s ease-out;
+    z-index: 0;
 }
