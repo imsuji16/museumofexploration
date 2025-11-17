@@ -10,13 +10,14 @@
     left: 0;
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 3vh;
+    box-shadow: 0 10px 30px rgb(0, 11, 15);
 }
 
 #nav-bar {
-    position: relative;
-    top: -55px;
-    right: -490px;
+    position: absolute;
+    top: 0vh;
+    right: 1vh;
     width: 25%;
     height: 20%;
     display: flex;
@@ -31,18 +32,33 @@
 }
 
 .nav-link {
-    font-family: "Monospace", monospace;
-    color: white;
-    font-size: 16px;
+    font-family: "Stack Sans Notch", sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-size: 2.5vh;
     text-decoration: none;
-    transition: font-size 0.1s ease-in-out;    
+    transition: font-size 0.2s ease-in-out, color 0.2s ease-in-out;   
+}
+
+.nav-link:hover {
+    font-size: 2.75vh;
+    color: rgb(161, 210, 255);
 }
 
 .base-text {
     font-family: "Stack Sans Notch", sans-serif;
     color: white;
-    font-size: 48px;
+    font-size: 9vh;
     text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.7);
+}
+
+#banner-text {
+    font-size: 9vh;
+    transition: font-size 0.5s ease;
+}
+
+#banner-text:hover {
+    font-size: 9.25vh;
+    transition: font-size 0.5s ease;
 }
 
 .body {
@@ -54,18 +70,28 @@
     align-items: center;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(14, 22, 31);
+}
+
+#about-box {
+    margin: 56vh auto 7vh auto;
 }
 
 .box {
     width: 80%;
     max-width: 800px;
-    background-color: #111;
-    border-radius: 12px;
+    background-color: rgb(22, 30, 40);
+    border-radius: 16px;
     padding: 20px 30px;
-    margin: 340px auto 50px auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    margin: 80px auto;
+    box-shadow: 0 6px 12px rgba(5, 17, 30, 0.8);
     text-align: center;
 }
 
@@ -77,7 +103,7 @@ body {
 .box-text {
     font-size: 18px;
     line-height: 1.6;
-    color: #ddd;
+    color: #d5e0e7;
 }
 
 #banner-image {
@@ -87,6 +113,156 @@ body {
     width: 110%;
     height: 110%;
     object-fit: cover;
-    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, opacity 0.5s ease-out;
     z-index: 0;
+    opacity: 0.35;
+}
+
+#banner-image:hover {
+    opacity: 0.45;
+}
+
+#banner-text {
+    position: relative;
+    z-index: 1;
+    top: 2vh;
+}
+
+.exhibits {
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.exhibits-title {
+    font-family: "Stack Sans Notch", sans-serif;
+    font-size: 8.5vh;
+    color: rgb(235, 171, 60);
+    margin: 2vh;
+    text-shadow: 0px 3px 8px rgba(162, 111, 24, 0.67);
+    transition: font-size 0.3s ease-out, text-shadow 0.3s ease-out;
+}
+
+.exhibits-title:hover {
+    font-size: 9vh;
+    text-shadow: 0px 4px 9px rgba(194, 133, 27, 0.67);
+}
+
+hr {
+    border: none;
+    height: 50px;
+    background: url("divider.png") center/contain no-repeat;
+    margin: 30px 0;
+}
+
+.exhibit-card {
+    width: 80%;
+    max-width: 900px;
+    background-color: rgb(38, 47, 59);
+    margin: 6vh auto;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(19, 31, 46, 0.8);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.exhibit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(16, 31, 48, 0.75);
+}
+
+.exhibit-img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 4vh;
+}
+
+.exhibit-info {
+    padding: 25px 30px;
+    width: 60%;
+    text-align: left;
+}
+
+.exhibit-name {
+    font-family: "Stack Sans Notch", sans-serif;
+    font-size: 42px;
+    color: rgb(255, 214, 129);
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px rgba(255, 174, 66, 0.45);
+}
+
+.exhibit-desc {
+    font-family: "Stack Sans Notch", sans-serif;
+    color: #e6eef5;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.exhibit-btn {
+    padding: 12px 22px;
+    font-size: 20px;
+    background-color: rgb(255, 183, 66);
+    color: rgb(46, 46, 46);
+    border: none;
+    border-radius: 10px;
+    font-family: "Stack Sans Notch", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.exhibit-btn:hover {
+    background-color: rgb(255, 202, 120);
+    transform: scale(1.07);
+}
+
+#footer {
+    background-color: rgb(11, 17, 24);
+    padding: 6vh 4vh;
+    margin-top: 10vh;
+    text-align: center;
+    box-shadow: 0 -8px 25px rgba(5, 10, 18, 0.6);
+}
+
+.footer-title {
+    font-family: "Stack Sans Notch", sans-serif;
+    color: rgb(255, 205, 120);
+    font-size: 5vh;
+    margin-bottom: 1vh;
+    text-shadow: 0px 3px 8px rgba(199, 147, 42, 0.5);
+}
+
+.footer-text {
+    font-family: "Stack Sans Notch", sans-serif;
+    color: #d3dce5;
+    font-size: 2.2vh;
+    margin-bottom: 3vh;
+}
+
+.footer-links {
+    margin: 2vh 0;
+}
+
+.footer-links a {
+    color: rgb(180, 210, 240);
+    margin: 0 2vh;
+    font-size: 2.4vh;
+    text-decoration: none;
+    font-family: "Verdana", sans-serif;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: rgb(255, 214, 129);
+}
+
+.footer-credit {
+    margin-top: 3vh;
+    color: #8899aa;
+    font-size: 1.8vh;
+    font-family: "Verdana", sans-serif;
+    opacity: 0.7;
 }

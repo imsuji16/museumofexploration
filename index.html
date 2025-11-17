@@ -3,27 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual History Museum Project</title>
+    <title>Museum Of Exploration</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="home-banner" class="banner">
-        <img id="banner-image" clas="banner" src="banner-image.jpg">
+        <img id="banner-image" src="banner-image.jpg" alt="Museum Banner Image">
             <nav id="nav-bar">
-                <a class="nav-link" href="notion.so">Home</a>
-                <a class="nav-link" href="notion.so">Contact</a>
-                <a class="nav-link" href="notion.so">Exhibits</a>
-                <a class="nav-link" href="notion.so">About</a>
+                <a class="nav-link" href="#home-banner">Home</a>
+                <a class="nav-link" href="#box2">Contact</a>
+                <a class="nav-link" href="#exhibit">Exhibits</a>
+                <a class="nav-link" href="#about-box">About</a>
             </nav>
-        <h1 id="banner-text" class="base-text">VIRTUAL HISTORY MUSEUM</h1>
+        <h1 id="banner-text" class="base-text">MUSEUM OF EXPLORATION</h1>
     </div>
     <div class="box" id="about-box">
         <h2 class="box-header base-text">About Us</h2>
-        <p class="box-text base-text">Welcome to the Virtual History Museum! Our mission is to bring history to life through immersive virtual exhibits. Explore different eras, cultures, and significant events from the comfort of your home.</p>
+        <p class="box-text base-text">some text here</p>
     </div>
+    <div class="exhibits">
+        <h2 id="exhibit" class="exhibits-title base-text">EXHIBITS</h2>
+        <hr>
+        <div class="exhibit-card">
+            <img src="wing1.jpg" class="exhibit-img" alt="Exhibit Image">
+            <div class="exhibit-info">
+                <h3 class="exhibit-name">The World In 1500</h3>
+                    <p class="exhibit-desc">
+                    smth here
+                    </p>
+                <button class="exhibit-btn">Explore</button>
+            </div>
+        </div>
+        <div class="exhibit-card">
+            <img src="wing2.jpg" class="exhibit-img" alt="Exhibit Image">
+            <div class="exhibit-info">
+                <h3 class="exhibit-name">The Reformation</h3>
+                    <p class="exhibit-desc">
+                    smth here
+                    </p>
+                <button class="exhibit-btn">Explore</button>
+            </div>
+        </div>
+        <div class="exhibit-card">
+            <img src="wing3.jpg" class="exhibit-img" alt="Exhibit Image">
+            <div class="exhibit-info">
+                <h3 class="exhibit-name">Age of Exploration</h3>
+                    <p class="exhibit-desc">
+                    smth here
+                    </p>
+                <button class="exhibit-btn">Explore</button>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <h3 class="footer-title">MUSEUM OF EXPLORATION</h3>
+    <p class="footer-text">By Sujit Dahal, Alex Taylor, and Niranjan Patil</p>
+    <div class="footer-links">
+        <a href="#home-banner">Home</a>
+        <a href="#about-box">About</a>
+        <a href="#exhibit">Exhibits</a>
+        <a href="#box2">Contact</a>
+    </div>
+    <p class="footer-credit">© 2025 Museum of Exploration (trust) </p>
+</footer>
     <script src="script.js"></script>
 </body>
 </html>
